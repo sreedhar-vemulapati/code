@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <!-- @counter-style vehicles{
+            symbols:"🏠""👤""🙎‍♂️""📞";
+            suffix:"";
+            system:cyclic;
+        } -->
+        body{
+            user-select: none;
+          background-image: url('https://wallpapers.com/images/high/beautiful-landscape-pictures-m5bh3yo9gru9yela.webp');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background: linear-gradient(50deg,rgb(55, 55, 219) ,  rgb(216, 67, 216));  */
+            
+
+        }
+       
+      div{
+       
+        height: 240px;
+        width: 400px;
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 25px;
+         /* background: linear-gradient(50deg,rgb(55, 55, 219) ,  rgb(216, 67, 216));  */
+        box-shadow: 5px 5px  5px palevioletred,2px 2px 2px blue inset;
+        text-align: center;
+        background-color: transparent;
+        backdrop-filter: blur(8px);
+
+    }
+    h1{
+        vertical-align: middle;
+    }
+    h1:hover{
+        scale: 1.2;
+    }
+    textarea{
+        border: 2px solid blue;
+        background-color: transparent;
+        border-radius: 30px 10px 30px 10px;
+        box-shadow: 5px 5px 5px blue;
+        color: rgb(240, 11, 11);
+        font-size: 17px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    textarea:focus{
+        border: 2px solid red;
+        border-radius: 10px 30px 10px 30px ;
+      
+        outline: none;
+        box-shadow: 5px 5px 5px rgb(211, 57, 57);
+       
+    }
+    textarea:hover{
+        border: 2px solid rgb(220, 92, 92);
+        border-radius: 10px 30px 10px 30px ;
+        
+        outline: none;
+        box-shadow: 5px 5px 5px red;
+    }
+       
+   span{
+    font-size: 50px;
+    
+   }
+  
+    /* div:hover{
+        box-shadow: 5px 5px 5px red;
+    } */
+    button{
+        border-radius: 20px;
+        padding: 8px;
+        background-color:transparent;
+        color:red;
+        font-size: large;
+        border: 1px solid rgb(222, 158, 196);
+        
+
+    }
+    button:hover{
+        border-radius: 10px 20px 10px 20px ;
+        border: none;
+        border-bottom: 2px solid red;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        border: 2px solid transparent;
+        height: 60px;
+        border-radius: 20px;
+      
+    }
+    /* nav:hover{
+        backdrop-filter: blur(50px);
+    } */
+    ul{
+        display: flex;
+       list-style-type: none;
+        justify-content: space-between;
+        margin-right: 40px;
+       
+    }
+    li{
+        padding: 10px;
+        
+    }
+    li:hover{
+        /* border-bottom: 1px solid red; */
+        border-radius: 5px 20px 5px 20px ;
+      font-size: 29px;
+      padding-left: 70px;
+    }
+    #nav{
+        margin-top: 10px;
+        margin-top: -1px;
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+       
+    }
+    #nav:hover{
+        scale: 1.2;
+    }
+    a{
+        text-decoration: none;
+       
+    }
+    a:hover{
+        color: rgba(243, 7, 144, 0.963);
+       
+    }
+   </style>
+</head>
+<body >
+    <nav>
+        <h1 id="nav"><span style="color: rgb(228, 13, 218);">M</span>ENU</h1>
+        <ul>
+            <li><a href="#">🏠Home</a></li>
+            <li><a href="#">👤Admin</a></li>
+            <li><a href="#">🙎‍♂️User</a></li>
+            <li><a href="#">📞Help</a></li>
+        </ul>
+    </nav>
+    <form action='/admin' method='post'>
+        <div>
+            <h1><span style="color: red;">S</span>entimental <span style="color: green;">A</span>nalysis</h1>
+            <label for="text"><span style="color: violet;">E</span>nter text:</label>
+            <textarea name="text" id="text" cols="20" rows="4"></textarea><br><br>
+            <button type="submit">Analyse</button>
+        </div>
+        
+        
+    </form>
+    
+</body>
+</html>

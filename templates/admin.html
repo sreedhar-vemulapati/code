@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/high/beautiful-landscape-pictures-m5bh3yo9gru9yela.webp'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            user-select: none;
+            /* background: linear-gradient(50deg,rgb(55, 55, 219) ,  rgb(216, 67, 216));  */
+        }
+        div {
+            /* border: 2px solid black; */
+            height: 250px;
+            width: 400px;
+            border-radius: 20px 10px 20px 10px;
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+            backdrop-filter: blur(20px);
+            box-shadow: 5px 5px 5px 0px palevioletred, 5px 5px 5px 0px blue inset;
+        }
+        span {
+            font-size: 50px;
+        }
+        h1:hover {
+            transform: scale(1.2); 
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            font-size: 25px;
+        }
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><span style="color: red; ">A</span>nalysis <span style="color: blue;">R</span>esult</h1>
+        <p><span style="color: yellow;font-size: 20px;">Text</span>:{{mytext}}</p>
+        <p><span style="color: green;font-size: 20px;">Sentiment</span>:{{mysentiment}}</p>
+        <p><span style="color: violet;font-size: 20px;">Emoji</span>:{{myemoji}}</p>
+        <a href="/" class="a">click here to go to the home page</a>
+        
+    </div>
+</body>
+</html>
